@@ -13,6 +13,20 @@ As well as being run individually, the `CyTag.py` script allows for all of the t
 
 *CyTag* has been developed at Cardiff University as part of the [CorCenCC](http://www.corcencc.org) project.
 
+## Releases
+
+A quick note on [releases](https://github.com/UCREL/CyTag/releases). You will notice that we have two release versions, this can sometimes be best seen in the [tags tab on GitHub](https://github.com/UCREL/CyTag/tags):
+1. Version 1.x.x
+2. Version 2.x.x
+
+### Version 1.x.x
+
+This relates most directly to the version that was published in the original paper, [Leveraging Lexical Resources and Constraint Grammar for Rule-Based
+Part-of-Speech Tagging in Welsh](https://aclanthology.org/L18-1623.pdf). This version will not have any changes to the actual tagger, but rather some code maybe added to make it easier to evaluate and run the tagger. The branch this is being developed on is the [**v1.0 branch.**](https://github.com/UCREL/CyTag/tree/v1.0)
+
+### Version 2.x.x
+
+This is the most updated version that is being actively developed on. **These changes may included changes to the Part Of Speech tagset, and other changes to the taggers compared to version 1.x.x.**. The branch this is being developed on is the [**main branch.**](https://github.com/UCREL/CyTag/tree/main)
 
 ## Dependencies
 
@@ -108,10 +122,10 @@ python3 *PATH*/CyTag/CyTag.py < example.txt
 
 You can run the *CyTag* package through the provided docker container like so: 
 
-*NOTE: if this is the first time you have used the docker container it will first download the container and then run it*
+**NOTE: if this is the first time you have used the docker container it will first download the container and then run it.**
 
 ``` bash
-docker run --rm ghcr.io/ucrel/cytag:latest "Dw i'n hoffi coffi. Dw i eisiau bwyta'r cynio hefyd!"
+docker run --rm ghcr.io/ucrel/cytag:1.0.1 "Dw i'n hoffi coffi. Dw i eisiau bwyta'r cynio hefyd!"
 ```
 Output from running the command above:
 ```txt
