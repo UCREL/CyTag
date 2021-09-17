@@ -1,0 +1,4 @@
+lxml==4.6.3
+numpy==1.21.2
+progress==1.6
+unicodedata2==13.0.0.post2
