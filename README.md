@@ -125,7 +125,7 @@ You can run the *CyTag* package through the provided docker container like so:
 **NOTE: if this is the first time you have used the docker container it will first download the container and then run it.**
 
 ``` bash
-docker run --rm ghcr.io/ucrel/cytag:1.0.3 "Dw i'n hoffi coffi. Dw i eisiau bwyta'r cynio hefyd!"
+docker run --rm ghcr.io/ucrel/cytag:1.0.4 "Dw i'n hoffi coffi. Dw i eisiau bwyta'r cynio hefyd!"
 ```
 Output from running the command above:
 ```txt
@@ -156,14 +156,6 @@ Below we list some examples on how to use the docker container:
 1. **Taking input text from standard input**
 ``` bash
 cat example.txt | docker run -i --rm ghcr.io/ucrel/cytag:latest
-```
-
-### Building the docker image locally
-
-If you would like to build the docker image locally, there is the [build_docker.sh bash script](./build_docker.sh). To run the script:
-
-``` bash
-bash build_docker.sh
 ```
 
 ## Contact
