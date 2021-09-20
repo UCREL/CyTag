@@ -125,7 +125,7 @@ You can run the *CyTag* package through the provided docker container like so:
 **NOTE: if this is the first time you have used the docker container it will first download the container and then run it.**
 
 ``` bash
-docker run --rm ghcr.io/ucrel/cytag:1.0.1 "Dw i'n hoffi coffi. Dw i eisiau bwyta'r cynio hefyd!"
+docker run --rm ghcr.io/ucrel/cytag:1.0.3 "Dw i'n hoffi coffi. Dw i eisiau bwyta'r cynio hefyd!"
 ```
 Output from running the command above:
 ```txt
