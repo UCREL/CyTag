@@ -39,8 +39,7 @@ jobs:
             type=semver,pattern={{version}}
 
       - name: Zip data for docker
-        steps:
-          - run: zip -r cytag.zip .
+        run: zip -r cytag.zip .
       
       - name: Build and push
         uses: docker/build-push-action@v2
