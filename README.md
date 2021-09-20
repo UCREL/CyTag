@@ -158,6 +158,14 @@ Below we list some examples on how to use the docker container:
 cat example.txt | docker run -i --rm ghcr.io/ucrel/cytag:latest
 ```
 
+### Building the docker image locally
+
+If you would like to build the docker image locally, there is the [build_docker.sh bash script](./build_docker.sh). To run the script:
+
+``` bash
+bash build_docker.sh
+```
+
 ## Contact
 
 Questions about *CyTag* can be directed to: 
