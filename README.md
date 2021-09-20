@@ -128,21 +128,22 @@ You can run the *CyTag* package through the provided docker container like so:
 docker run --rm ghcr.io/ucrel/cytag:1.0.4 "Dw i'n hoffi coffi. Dw i eisiau bwyta'r cynio hefyd!"
 ```
 Output from running the command above:
-```txt
-1       Dw      1,1     bod     B       Bpres1u
-2       i       1,2     mi      Rha     Rhapers1u
-3       'n      1,3     yn      U       Uberf
-4       hoffi   1,4     hoffi   B       Be
-5       coffi   1,5     coffi   E       Egu
-6       .       1,6     .       Atd     Atdt
-7       Dw      2,1     bod     B       Bpres1u
-8       i       2,2     mi      Rha     Rhapers1u
-9       eisiau  2,3     eisiau  E       Egu
-10      bwyta   2,4     bwyta | bwyta   B | B   Be | Bgorch2u
-11      'r      2,5     y       YFB     YFB
-12      cynio   2,6     cynio   B       Be
-13      hefyd   2,7     hefyd   Adf     Adf
-14      !       2,8     !       Atd     Atdt
+```tsv
+1	Dw	1,1	bod	B	Bpres1u	
+2	i	1,2	mi	Rha	Rhapers1u	
+3	'n	1,3	yn	U	Uberf	
+4	hoffi	1,4	hoffi	B	Be	
+5	coffi	1,5	coffi	E	Egu	
+6	.	1,6	.	Atd	Atdt	
+7	Dw	2,1	bod	B	Bpres1u	
+8	i	2,2	mi	Rha	Rhapers1u	
+9	eisiau	2,3	eisiau	E	Egu	
+10	bwyta	2,4	bwyta	B	Be	
+11	'r	2,5	y	YFB	YFB	
+12	cynio	2,6	cynio	B	Be	
+13	hefyd	2,7	hefyd	Adf	Adf	
+14	!	2,8	!	Atd	Atdt
+
 ```
 
 All of the arguments after `docker run --rm ghcr.io/ucrel/cytag:latest` will be passed directly to [CyTag.py](./CyTag.py).
