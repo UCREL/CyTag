@@ -157,6 +157,15 @@ Below we list some examples on how to use the docker container:
 ``` bash
 cat example.txt | docker run -i --rm ghcr.io/ucrel/cytag:latest
 ```
+2. **Running on a text file with XML output**
+```bash
+# The first command runs cytag over the file called test.txt
+docker run -v $(pwd)/test.txt:/tmp/test_file.txt --name cytag ghcr.io/ucrel/cytag:1.0.4 -f xml -n example -i /tmp/test_file.txt
+# This command copies the outputs directory to a new directory that will be created called `docker_output`
+docker cp cytag:/usr/nobody/CyTag-1.0/outputs ./docker_output
+docker rm -f cytag # removes the container
+``` 
+Within the copied directory called `docker_output` will be another directory called `example`. Within the `example` directory will be the `xml` output in a file called `example.xml`.
 
 ## Contact
 
