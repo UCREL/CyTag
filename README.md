@@ -144,7 +144,7 @@ Output from running the command above:
 13	hefyd	2,7	hefyd	Adf	Adf	
 ```
 
-All of the arguments after `docker run --rm ghcr.io/ucrel/cytag:latest` will be passed directly to [CyTag.py](./CyTag.py).
+All of the arguments after `docker run --rm ghcr.io/ucrel/cytag:1.0.4` will be passed directly to [CyTag.py](./CyTag.py).
 
 The docker container is [hosted on GitHub as a package](https://github.com/UCREL/CyTag/pkgs/container/cytag). By default the container runs as the user `nobody`, which is a random non-root user, on a debian based operating system. For more information on how the docker container was created see the [dockerfile](./dockerfile).
 
@@ -154,7 +154,7 @@ Below we list some examples on how to use the docker container:
 
 1. **Taking input text from standard input**
 ``` bash
-cat example.txt | docker run -i --rm ghcr.io/ucrel/cytag:latest
+cat example.txt | docker run -i --rm ghcr.io/ucrel/cytag:1.0.4
 ```
 2. **Running on a text file with XML output**
 ```bash
